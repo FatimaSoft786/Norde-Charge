@@ -53,16 +53,16 @@ const Advantages = () => {
   return (
     <div className=' flex flex-col bg-black mt-[40px]'>
      <div className=' flex flex-col justify-center items-center mt-4'>
-    <p className=' text-[34px] font-semibold text-white'>Advantages</p>
-    <div className=' h-[3px] w-[20%] bg-white'></div>
+    <p className=' text-[34px] sm:text-[24px] font-semibold text-white'>Advantages</p>
+    <div className=' h-[3px] sm:w-[30%] sm:h-[2px] w-[20%] bg-white'></div>
      </div>
 
-     <div className=' grid grid-cols-3 gap-5 mx-[30px] my-[20px]'>
+     <div className=' grid grid-cols-3 sm:grid-cols-1 gap-5 mx-[30px] my-[20px]'>
 {
     data.map((e)=>(
         <div className=' bg-white rounded-md flex flex-col justify-center items-center' key={e.id}>
-        <img className=' w-24 h-24 my-2' src={e.image} alt='charging'/>
-         <p className=' font-medium text-[26px] text-black'>{e.title}</p>
+        <img className=' w-24 sm:w-18 sm:h-18 h-24 my-2' src={e.image} alt='charging'/>
+         <p className=' font-medium sm:text-[22px] text-[26px] text-black'>{e.title}</p>
          <p className=' font-normal text-[13px] text-black mx-[14px] py-0'>{e.description}</p>
         </div>
     ))
