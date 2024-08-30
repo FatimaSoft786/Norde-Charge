@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 import charging4 from "../../images/charging4.svg"
 import charging5 from "../../images/charging5.svg"
 import charging6 from "../../images/charging6.svg"
+import charging7 from "../../images/charging7.svg"
+import charging8 from "../../images/charging8.svg"
+import charging9 from "../../images/charging9.svg"
+
+
+
 const Advantages = () => {
 
  const [data, setData] = useState([ 
@@ -26,19 +32,19 @@ const Advantages = () => {
      {
         "id": "4",
         "title": "Simple to set up",
-        "image": charging6,
+        "image": charging7,
         "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum lorem ipsum dolor sit amet Lorem ipsum ."
     },
      {
         "id": "5",
         "title": "Elegant design",
-        "image": charging6,
+        "image": charging8,
         "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum lorem ipsum dolor sit amet Lorem ipsum ."
     },
      {
         "id": "6",
         "title": "Location flexibility",
-        "image": charging6,
+        "image": charging9,
         "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur Lorem ipsum dolor sit amet lorem ipsum dolor sit amet Lorem ipsum lorem ipsum dolor sit amet Lorem ipsum ."
     },
 
@@ -55,7 +61,7 @@ const Advantages = () => {
 {
     data.map((e)=>(
         <div className=' bg-white rounded-md flex flex-col justify-center items-center' key={e.id}>
-        <img className=' w-24 h-24 my-2' src={charging4} alt='charging'/>
+        <img className=' w-24 h-24 my-2' src={e.image} alt='charging'/>
          <p className=' font-medium text-[26px] text-black'>{e.title}</p>
          <p className=' font-normal text-[13px] text-black mx-[14px] py-0'>{e.description}</p>
         </div>
