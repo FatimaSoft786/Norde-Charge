@@ -10,11 +10,10 @@ import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
-// No type annotations here, just plain objects
 const navItems = [
    {
     label: "Home",
-    link: "/loading"
+    link: "/"
   },
   {
     label: "Products",
@@ -100,11 +99,12 @@ export default function Navbar() {
 
   return (
     <div className="mx-auto sticky z-50 flex  w-full max-w-7xl justify-between px-4 py-5 text-sm">
+      {/* left side  */}
       <section ref={animationParent} className="flex items-center gap-10">
         {/* logo */}
         <img src={logo} alt=" logo" />
         {/* {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />} */}
-        <div className="flex items-center gap-4 transition-all sm:hidden">
+        <div className="flex items-center gap-4 transition-all">
           {navItems.map((d, i) => (
             <Link
               key={i}
@@ -124,6 +124,8 @@ export default function Navbar() {
                       key={i}
                       to={ch.link ?? "#"}
                       className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-neutral-400 hover:text-black">
+                     
+                      {/* item */}
                       <span className="whitespace-nowrap   pl-3 ">
                         {ch.label}
                       </span>
@@ -137,7 +139,7 @@ export default function Navbar() {
       </section>
          {/* <FiMenu
         onClick={openSideMenu}
-        className="cursor-pointer text-4xl md:block hidden"
+        className="cursor-pointer text-4xl "
       /> */}
     </div>
   );
@@ -145,7 +147,7 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }) {
   return (
-    <div className=" relative left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60">
+    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
       <div className=" h-full w-[65%] bg-white px-4 py-4">
         <section className="flex justify-end">
           <AiOutlineClose
