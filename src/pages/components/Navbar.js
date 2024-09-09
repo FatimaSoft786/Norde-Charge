@@ -14,7 +14,7 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 const navItems = [
    {
     label: "Home",
-    link: "/"
+    link: "/loading"
   },
   {
     label: "Products",
