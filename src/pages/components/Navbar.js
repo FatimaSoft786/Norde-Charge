@@ -103,7 +103,7 @@ export default function Navbar() {
       <section ref={animationParent} className="flex items-center gap-10">
         {/* logo */}
         <img src={logo} alt=" logo" />
-        {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
+        {/* {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />} */}
         <div className="flex items-center gap-4 transition-all sm:hidden">
           {navItems.map((d, i) => (
             <Link
@@ -135,10 +135,10 @@ export default function Navbar() {
           ))}
         </div>
       </section>
-         <FiMenu
+         {/* <FiMenu
         onClick={openSideMenu}
         className="cursor-pointer text-4xl md:block hidden"
-      />
+      /> */}
     </div>
   );
 }
