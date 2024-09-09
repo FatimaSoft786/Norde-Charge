@@ -3,10 +3,10 @@ import arrow from "../HomePage/arrow_right.png";
 
 const HomeBanner = () => {
   return (
-    <div className="flex h-[530px] items-start justify-center bg-[url(/public/images/banner1_bg.png)] bg-cover bg-no-repeat py-[100px] md:h-auto md:py-5">
+    <div className="flex w-full h-[530px] items-start justify-center bg-[url(/public/images/banner1_bg.png)] bg-cover bg-no-repeat py-[100px] md:h-auto md:py-5">
       <div className=" container-xs mb-5 flex justify-center md:px-5">
         <div className=" flex w-full flex-col items-center gap-4">
-          <p className=" mt-1.5 text-white sm:text-[36px] text-[46px] text-center font-semibold  md:text-[39px]">
+          <p className=" mt-1.5 text-white sm:text-[24px] text-center text-[46px] font-semibold  md:text-[39px]">
         Loading release
           </p>
           <div className=" flex flex-col items-center gap-[54px] self-stretch sm:gap-[72px]">

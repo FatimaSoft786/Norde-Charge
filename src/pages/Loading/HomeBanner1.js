@@ -8,7 +8,7 @@ const HomeBanner1 = () => {
   return (
     <div className='flex flex-col justify-center items-center bg-gradient2 py-[56px] md:py-[5px] mt-[40px]'>
 
-    <div className=' flex justify-between flex-row mx-[70px] sm:mx-3 gap-5'>
+    <div className=' flex justify-between sm:flex-col flex-row mx-[70px] sm:mx-3 gap-5'>
      <img className=' w-[450px] h-[300px]' src={Product1} alt='Product'/>
      <div className=' flex flex-col justify-between h-[300px]'>
     
@@ -19,7 +19,7 @@ const HomeBanner1 = () => {
     </p>
     </div>
 
-     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[150px] rounded h-[48px] w-[171px]">
+     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[0px] rounded h-[48px] w-[171px]">
          
             <p className=" text-white items-center text-center pr-[16px] text-[18px] font-bold">
              Learn
@@ -32,7 +32,7 @@ const HomeBanner1 = () => {
     </div>
 
 
-   <div className=' flex justify-between flex-row mx-[70px] sm:mx-3 gap-5 mt-20'>
+   <div className=' flex justify-between sm:flex-col flex-row mx-[70px] sm:mx-3 gap-5 mt-20'>
     
      <div className=' flex flex-col justify-between h-[300px]'>
     
@@ -45,7 +45,7 @@ more about the app
     </p>
     </div>
 
-     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[150px] rounded h-[48px] w-[171px]">
+     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[0px] rounded h-[48px] w-[171px]">
          
             <p className=" text-white items-center text-center pr-[16px] text-[18px] font-bold">
              Learn
@@ -59,7 +59,7 @@ more about the app
       <img className=' w-[450px] h-[300px]' src={Product2} alt='Product'/>
     </div>
 
-     <div className=' flex justify-between flex-row mx-[70px] sm:mx-3 gap-5 mt-20'>
+     <div className=' flex justify-between sm:flex-col flex-row mx-[70px] sm:mx-3 gap-5 mt-20'>
      <img className=' w-[450px] h-[300px]' src={Product3} alt='Product'/>
      <div className=' flex flex-col justify-between h-[300px]'>
     
@@ -70,7 +70,7 @@ more about the app
     </p>
     </div>
 
-     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[150px] rounded h-[48px] w-[171px]">
+     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[0px] rounded h-[48px] w-[171px]">
          
             <p className=" text-white items-center text-center pr-[16px] text-[18px] font-bold">
              Learn
@@ -82,7 +82,7 @@ more about the app
      </div>
     </div>
 
-     <div className=' flex justify-between flex-row mx-[70px] sm:mx-3 gap-5 mt-3'>
+     <div className=' flex justify-between sm:flex-col flex-row mx-[70px] sm:mx-3 gap-5 mt-3'>
      <div className=' flex flex-col justify-between h-[300px]'>
     
     <div className=' flex flex-col'>
@@ -92,7 +92,7 @@ more about the app
     </p>
     </div>
 
-     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[150px] rounded h-[48px] w-[171px]">
+     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[0px] rounded h-[48px] w-[171px]">
          
             <p className=" text-white items-center text-center pr-[16px] text-[18px] font-bold">
              Learn
@@ -105,7 +105,7 @@ more about the app
      <img className=' w-[450px] h-[300px]' src={Product1} alt='Product'/>
     </div>
 
-     <div className=' flex justify-between flex-row mx-[70px] sm:mx-3 gap-5 mt-3'>
+     <div className=' flex justify-between sm:flex-col flex-row mx-[70px] sm:mx-3 gap-5 mt-3'>
       <img className=' w-[450px] h-[300px]' src={Product1} alt='Product'/>
      <div className=' flex flex-col justify-between h-[300px]'>
    
@@ -116,7 +116,7 @@ more about the app
     </p>
     </div>
 
-     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[150px] rounded h-[48px] w-[171px]">
+     <div className=" flex flex-row justify-center items-center cursor-pointer mt-[0px]  whitespace-nowrap bg-primary mb-0 sm:mb-[0px] rounded h-[48px] w-[171px]">
          
             <p className=" text-white items-center text-center pr-[16px] text-[18px] font-bold">
              Learn

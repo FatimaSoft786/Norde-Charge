@@ -99,13 +99,12 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto flex  w-full max-w-7xl justify-between px-4 py-5 text-sm">
-      {/* left side  */}
+    <div className="mx-auto sticky z-50 flex  w-full max-w-7xl justify-between px-4 py-5 text-sm">
       <section ref={animationParent} className="flex items-center gap-10">
         {/* logo */}
         <img src={logo} alt=" logo" />
-        {/* {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />} */}
-        <div className="flex items-center gap-4 transition-all">
+        {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
+        <div className="flex items-center gap-4 transition-all sm:hidden">
           {navItems.map((d, i) => (
             <Link
               key={i}
@@ -118,18 +117,13 @@ export default function Navbar() {
                   <IoIosArrowDown className=" rotate-180  transition-all group-hover:rotate-0" />
                 )}
               </p>
-
-              {/* dropdown */}
               {d.children && (
                 <div className="absolute   right-0   top-10 hidden w-auto  flex-col gap-1   rounded-lg bg-white py-3 shadow-md  transition-all group-hover:flex ">
                   {d.children.map((ch, i) => (
                     <Link
                       key={i}
                       to={ch.link ?? "#"}
-                      className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-neutral-400 hover:text-black  "
-                    >
-                     
-                      {/* item */}
+                      className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-neutral-400 hover:text-black">
                       <span className="whitespace-nowrap   pl-3 ">
                         {ch.label}
                       </span>
@@ -140,23 +134,18 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-        {/* navitems */}
       </section>
-
-      {/* right side data */}
-     
-
-      {/* <FiMenu
+         <FiMenu
         onClick={openSideMenu}
-        className="cursor-pointer text-4xl md:hidden"
-      /> */}
+        className="cursor-pointer text-4xl md:block hidden"
+      />
     </div>
   );
 }
 
 function MobileNav({ closeSideMenu }) {
   return (
-    <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60 md:hidden">
+    <div className=" relative left-0 top-0 flex h-full min-h-screen w-full justify-end bg-black/60">
       <div className=" h-full w-[65%] bg-white px-4 py-4">
         <section className="flex justify-end">
           <AiOutlineClose
@@ -175,16 +164,6 @@ function MobileNav({ closeSideMenu }) {
             </SingleNavItem>
           ))}
         </div>
-
-        <section className="  flex  flex-col   gap-8  mt-4 items-center">
-          <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
-            Login
-          </button>
-
-          <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
-            Register
-          </button>
-        </section>
       </div>
     </div>
   );
