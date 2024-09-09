@@ -6,7 +6,7 @@ import Arrow from "../../images/arrow_right.png"
 
 const HomeBanner1 = () => {
   return (
-    <div className='flex flex-col justify-center items-center bg-[#00800066] py-[56px] md:py-[5px] mt-[40px]'>
+    <div className='flex flex-col justify-center items-center bg-gradient2 py-[56px] md:py-[5px] mt-[40px]'>
 
     <div className=' flex justify-between flex-row mx-[70px] sm:mx-3 gap-5'>
      <img className=' w-[450px] h-[300px]' src={Product1} alt='Product'/>

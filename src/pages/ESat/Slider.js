@@ -30,7 +30,7 @@ const Slider = () => {
         data.map((e)=>(
             <div key={e.id}>
              <img src={e.image} alt='charging'/>
-             <p className=' text-[24px] font-semibold text-black'>{e.title}</p>
+             <p className=' text-[24px] sm:text-[18px] font-semibold text-black'>{e.title}</p>
             </div>
         ))
     }

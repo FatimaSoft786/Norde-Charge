@@ -54,7 +54,7 @@ const Advantages = () => {
     <div className=' flex flex-col bg-black mt-[40px]'>
      <div className=' flex flex-col justify-center items-center mt-4'>
     <p className=' text-[34px] sm:text-[24px] font-semibold text-white'>Advantages</p>
-    <div className=' h-[3px] sm:w-[30%] sm:h-[2px] w-[20%] bg-white'></div>
+    <div className='h-[3px] sm:w-[30%] sm:h-[2px] w-[15%] bg-white'></div>
      </div>
 
      <div className=' grid grid-cols-3 sm:grid-cols-1 gap-5 mx-[30px] my-[20px]'>

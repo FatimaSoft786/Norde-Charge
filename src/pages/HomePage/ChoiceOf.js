@@ -25,7 +25,7 @@ const ChoiceOf = () => {
 
 
   return (
-    <div className=' flex flex-col justify-center items-center bg-[#00800066] py-[56px] md:py-[5px]'>
+    <div className=' flex flex-col justify-center items-center bg-gradient2 py-[56px] md:py-[5px]'>
         <div className=' flex flex-col w-[32%] items-center gap-[12px] md:w-full'>
         <p className='text-[38px] font-bold md:text-[36px] sm:text-[32px] text-black'>Choice Of Location</p>
         <div className=' h-[3px] w-full self-stretch bg-black'></div>
